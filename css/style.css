@@ -1,27 +1,115 @@
 .container{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background-image: url(../image/background.png);
     background-position: center;
     background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     opacity: 0.95;
+    display: flex;
 }
+.div1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    /* margin-left: 50px;
+    margin-right: 20px; */
+}
+.login{
+    width: 380px;
+    height: 450px;
+    background-color: white;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 80%; 
+}
+.icons{
+    margin: 30px auto;
+    text-align: center;
+}
+.icons img{
+    width: 35px;
+    margin-right: 20px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.x{
+    color: red;
+    font-weight: bold;
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+    outline: none;
+    border: 0;
+    background: transparent;
+}
+.login label{
+    margin-left: 20px;
+    font-weight: bold;
+}
+.login input{
+    max-width: 400px;
+    width: 300px;
+    outline: none;
+    border: 0;
+    margin: 20px auto;
+    border-bottom: 1px solid #999;
+}
+
+#logId button{
+    width: 85%;
+    margin-left: 30px;
+    margin-top: 50px;
+    background: linear-gradient(rgba(246,10,68,1) 0%, rgba(255,89,0,1) 100%);
+    border: 0;
+    outline: none;
+    padding: 10px 30px;
+    cursor: pointer;
+    border-radius: 30px;
+
+
+}
+.div2{
+    /* display: flex;
+    align-items: center;
+    justify-content: flex-end; */
+    /* position: relative; */
+    width: 300px;
+    margin-top: 20px;
+    /* float: right; */
+}
+#btnlogin{
+    width: 130px;
+    height: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    background: linear-gradient(rgba(246,10,68,1) 0%, rgba(255,89,0,1) 100%);
+    border-radius: 50px;
+    transition: all .5s ;
+}
+#btnlogin:hover{
+    background-color: rgb(247, 90, 137);
+}
+
 #form{
     border: 2px solid rgb(17, 0, 255);
     border-radius: 5px;
     padding: 10px;
     margin-right: 20px;
 }
-#form button{
+#submit{
     border-radius: 30px;
     outline: none;
     background-color: blue;
     border: 0;
     padding: 8px;
     color: white;
+    transition: all .5s ;
+}
+#submit:hover{
+    background-color: green;
 }
 #ul li{
     border: 2px solid aqua;

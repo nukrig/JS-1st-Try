@@ -13,16 +13,39 @@
             color: white;
             font-size: 30px;
         }
+        .dis-none{
+            display: none;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <form action="submit" id="form">
-            <input type="text" name="username">
-            <button id="submit" type="submit">SUBMIT</button>
-        </form>
-        <ul id="ul"></ul>
-        <p id="error"></p>
+        <div class="div1">
+            <form action="submit" id="form">
+                <input type="text" name="username">
+                <button id="submit" type="submit">SUBMIT</button>
+            </form>
+            <ul id="ul"></ul>
+            <p id="error"></p>
+        </div>
+        <div class="login dis-none">
+            <button class="x" type="button" onclick="logInForm()">X</button> <br>
+            <div class="icons">
+                <img src="image/fb.png" alt="facebook">
+                <img src="image/tw.png" alt="twitter">
+                <img src="image/gp.png" alt="google">
+            </div>
+            <form id="logId" class="form">
+                <label for="user">UserName</label> <br>
+                <input type="text"><br>
+                <label for="pass">PassWord</label> <br>
+                <input type="password"> <br>
+                <button type="submit"> Submit</button> <br>
+            </form>
+        </div>
+        <div class="div2">
+            <button type="button" id="btnlogin" onclick="logInForm()">LOG IN</button>
+        </div>
     </div>
         <script src="main.js"></script>
 </body>
