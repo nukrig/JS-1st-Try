@@ -11,9 +11,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 600px;
-    /* margin-left: 50px;
-    margin-right: 20px; */
+    width: 500px;
+    margin-left: 20px
+}
+.header{
+    color: blue;
+    font-weight: bold;
+    font-size: 20px;
 }
 .login{
     width: 380px;
@@ -77,7 +81,7 @@
 }
 #btnlogin{
     width: 120px;
-    height: 70px;
+    height: 50px;
     font-size: 20px;
     font-weight: bold;
     background: linear-gradient(rgba(246,10,68,1) 0%, rgba(255,89,0,1) 100%);
@@ -89,6 +93,7 @@
     color: white;
     opacity: 80%;
 }
+
 
 #form{
     border: 2px solid rgb(17, 0, 255);
@@ -113,4 +118,30 @@
     border-radius: 5px;
     padding: 10px;
     margin-bottom: 5px;
+}
+
+@media(max-width:700px){
+    #btnlogin{
+        width: 80px;
+        height: 40px;
+        font-size: 15px;
+    }
+    .div1{
+        display: inline-block;
+        width: 400px;
+        margin-right: 30px;
+    }
+    .div1 button{
+        margin-top: 10px;
+    }
+    #form{
+        border: 0;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    #ul li{
+        max-width: 350px;
+        display: flex;
+        justify-content: space-around;
+    }
 }
