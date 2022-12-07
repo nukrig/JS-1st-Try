@@ -53,7 +53,21 @@ form.addEventListener('submit',(event) => {
 
 
 const login = document.querySelector('.login')
+const logInput = document.querySelectorAll('input[name="login"]')
+const div2 = document.querySelector('.div2')
 
 function logInForm(){
+    div2.classList.toggle('dis-none')
     login.classList.toggle('dis-none')
 }
+
+
+login.addEventListener('submit',()=>{
+    for(let element of logInput)
+    if(element.value){
+        element.value=''
+    }else{
+        alert('EMPTY VALUE')
+        break
+    }
+})
